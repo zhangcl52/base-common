@@ -7,7 +7,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>base-</name>
+    <name>base-common</name>
     <url>http://maven.apache.org</url>
 
 
@@ -92,7 +92,7 @@
     </dependencies>
 
     <build>
-        <finalName>base-code</finalName>
+        <finalName>base-common</finalName>
         <pluginManagement>
             <plugins>
                 <!-- compiler插件, 设定JDK版本 -->
