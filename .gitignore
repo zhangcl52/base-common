@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 target/
 .idea/
 *.bak
@@ -10,6 +11,8 @@ target/
 =======
 =======
 >>>>>>> fec08469079fb2c14dc20668ef5b364be34cf51d
+=======
+>>>>>>> f3d4c86900534006eafb42d9bf98c33230309853
 *.class
 
 # Mobile Tools for Java (J2ME)
@@ -23,6 +26,9 @@ target/
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> e70cf401dca1931aafff465080fae297194cc1b2
 =======
 >>>>>>> fec08469079fb2c14dc20668ef5b364be34cf51d
+=======
+>>>>>>> f3d4c86900534006eafb42d9bf98c33230309853
