@@ -1,4 +1,4 @@
-package com.hunter.common;
+package com.hunter.common.util;
 
 import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
