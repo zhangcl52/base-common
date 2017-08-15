@@ -1,0 +1,1 @@
+package com.hunter.common.transaction;/** * @Author zhangcl * @Date 17/8/11  下午6:30 */public interface TransactionCallback {    Object doTransaction();}

@@ -10,21 +10,25 @@ import java.util.List;
  * Created by homelink on 2016/6/12.
  */
 public final class FileUtil {
+    private FileUtil() {
+    }
+
     /**
      * 按行读取文件
+     *
      * @param fileName
      * @return
      * @throws Exception
      */
-    public static List<String> readFileByLines(String fileName)throws Exception {
-        if(Strings.isNullOrEmpty(fileName)){
+    public static List<String> readFileByLines(String fileName) throws Exception {
+        if (Strings.isNullOrEmpty(fileName)) {
             throw new Exception("fileName is null or empty");
         }
         List<String> data = Lists.newArrayList();
-        FileInputStream  file = new FileInputStream (fileName);
+        FileInputStream file = new FileInputStream(fileName);
         BufferedReader reader = null;
         try {
-            reader = new BufferedReader(new InputStreamReader(file,"GBK"));
+            reader = new BufferedReader(new InputStreamReader(file, "GBK"));
             String tempString = null;
             while ((tempString = reader.readLine()) != null) {
                 data.add(tempString);
@@ -45,6 +49,7 @@ public final class FileUtil {
 
     /**
      * 按行写入文件
+     *
      * @param content
      * @param fileName
      * @throws IOException
@@ -67,13 +72,14 @@ public final class FileUtil {
 
     /**
      * 测试方法
+     *
      * @param arg
      */
-    public static void main(String arg[]){
+    public static void main(String arg[]) {
         try {
-            List<String> datelist=FileUtil.readFileByLines("D:\\用户账户\\Desktop\\纪录.txt");
-            FileUtil.writeFileByLines(datelist,"D:\\用户账户\\Desktop\\纪录1.txt");
-            for(int i=0;i<datelist.size();i++){
+            List<String> datelist = FileUtil.readFileByLines("D:\\用户账户\\Desktop\\纪录.txt");
+            FileUtil.writeFileByLines(datelist, "D:\\用户账户\\Desktop\\纪录1.txt");
+            for (int i = 0; i < datelist.size(); i++) {
                 System.out.println(datelist.get(i));
             }
         } catch (Exception e) {
